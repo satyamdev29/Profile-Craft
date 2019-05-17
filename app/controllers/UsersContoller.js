@@ -20,7 +20,6 @@ router.post('/register', function(req, res){
 })
 
 // localhost:3000/users/login
-
 router.post('/login', function(req, res){
     const body = req.body
 
@@ -32,29 +31,6 @@ router.post('/login', function(req, res){
         res.send(err)
     })
 })
-
-// // localhost:3000/users/login
-// router.post('/login', function(req, res){
-//     const body = req.body
-//     let currentUser
-//     User.findOne({email:body.email})
-//         .then(function(user){
-//             if(!user){ //if user with email not found
-//                 res.status('404').send('invalid email/ password')
-//             }
-//             currentUser = user // set this up so that, we can use it in the next then method
-//             return bcrypt.compare(body.password, user.password)
-//         })
-
-//         .then(function(result){
-//             if(result){
-//                 res.send(currentUser)
-//             } else{
-//                 res.send('invalid email/ passwword')
-//             }
-//         })
-    
-// })
 
 // localhost:3000/users/logout
 
