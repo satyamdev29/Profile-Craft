@@ -36,6 +36,16 @@ router.post('/login', function(req, res){
 
 // localhost:3000/users/account 
 
+// localhost:3005/users
+router.get('/', function(res, res){
+    User.find()
+    .then(function(users){
+        res.send(users)
+    })
+    .catch(function(err){
+        res.send(err)
+    })
+})
 
 module.exports = {
     usersRouter: router
