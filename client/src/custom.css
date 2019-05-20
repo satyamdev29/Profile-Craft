@@ -1,0 +1,516 @@
+/*****************************************************************************************
+
+Default Values :
+
+Font Family             : Raleway
+
+Greenish Blue           : #34a853       (Buttons, Icons, Links, Lines & Backgrounds)
+Brown                   : #4c3201       (Link)
+Steel Gray              : #41464b       (Headings)
+Blue Bayoux             : #64707b       (Paragraphs)
+White                   : #fff          (White with Black background)
+Black                   : #000          (Black with White background)
+
+******************************************************************************************/
+
+/* ------------------------------------------------------ */
+/* html5doctor.com Reset Stylesheet                       */
+/* v1.6.1                                                 */
+/* Last Updated: 2010-09-17                               */
+/* Author: Richard Clark - http://richclarkdesign.com     */
+/* Twitter: @rich_clark                                   */
+/* ------------------------------------------------------ */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+ul,li{list-style: none;}
+
+/* -------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700');
+html {
+    background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 62.5%; /* Base font size 10px */
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    /*overflow: hidden;
+    height: 100%;*/
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* Custom Style */
+/* -------------------------------------------------- */
+
+.log_text {
+    font-size: 2rem;
+    color: #34a853 !important;
+}
+.form-control{
+    font-size: 1.5rem
+}
+.btn{
+    font-size: 1.5rem;
+}
+
+.btn-signin{
+    color:#fff;
+    padding-left: .5rem;
+}
+.btn-signin:hover{
+    color:#34a853;
+    text-decoration: none;
+}
+.profilePic{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    margin-right: 1.5rem
+}
+.profilePic .fa-user{
+    font-size: 2rem;
+    margin-top: .5rem
+}
+.userId{
+    color: #f3c11d;
+    padding-right: 1rem;
+}
+.userId:hover{
+    color: #f3c11d;
+    text-decoration:none;
+}
+/* -------------------------------------------------- */
+/* HERO BANNER */
+/* -------------------------------------------------- */
+
+.section__hero{
+    position: relative;
+}
+.section__hero_content{
+    color: #fff;
+}
+.section__hero_content--bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../src/img/001.jpg) 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    min-height: 600px;
+}
+.section__hero-block-left-top, 
+.section__hero-block-right-top{
+    padding-top: 6rem;
+}
+.section__hero-block-left-top--text, .section__main-content-block-left-top--text{
+    font-size:1.8rem;
+}
+.section__hero-block-left-top--buildCv, .section__main-content-block-left-top--getHelp{
+    font-size: 3.2rem;
+    margin-top:2rem;
+}
+
+.section__hero-block-left-bottom{
+    margin-top:26.8rem;
+}
+.section__hero-block-left-bottom--standoutResume{
+    font-size:3.2rem;
+    line-height: 5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.section__hero-block-left-bottom--freeSignUp,
+.section__hero-block-left-bottom--makingCv{
+    font-size:1.8rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+}
+.section__hero-block-center-bottom-signUp{
+    padding-bottom: 2rem;
+}
+.section__hero-block-center-bottom-signUp--text{
+    font-size:2.6rem;
+    display: block;
+    color:#4185f0;
+    text-align: center;
+}
+
+.btn-signup{
+    background: #34a853;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom:10%;
+    margin-left: -5%;
+}
+.btn-signup:hover{
+    background-color: #1c8638;
+    color: #fff;
+}
+
+/* -------------------------------------------------- */
+/* SECTION SUB FOOTER */
+/* -------------------------------------------------- */
+
+.section__block-sub-footer{
+    padding: 2rem 0;
+    background-color: #f2f0f1;
+}
+.section__block-sub-footer--text, 
+.section__block-sub-footer--rightTemplate{
+    font-size:1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.section__block-sub-footer--getHelp, .section__block-sub-footer--cvSample{
+     margin-top: 2rem;
+    font-size:3.2rem;
+}
+.section__block-sub-footer--getHelp a, .section__block-sub-footer--cvSample a{
+     color: #555;
+    transition: color 0.5s;
+}
+.section__block-sub-footer--getHelp a:hover, .section__block-sub-footer--cvSample a:hover{
+     color: #34a853;
+     text-decoration: none;
+}
+
+/* -------------------------------------------------- */
+/* SECTION FOOTER */ 
+/* -------------------------------------------------- */
+.footer{
+    background: #555;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+/* -------------------------------------------------- */
+/* SIGNIN / SIGN OUT */
+/* -------------------------------------------------- */
+.signup{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)), url(../img/002.jpg);
+    background-size: cover;
+}
+
+.signup__form{
+    border: 1px solid #ccc;
+    padding: 6rem 8rem;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    background: hsla(208, 26%, 31%, 0.699);
+    box-shadow: 0px 0px 8px 5px #cccccc;
+    width: 50%;
+    position: relative;
+}
+
+.form-group{
+    padding-bottom: 1rem;
+}
+.form-group label{
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+    color:#fff
+}
+.form-group input{
+    padding: 2.2rem;
+    font-size: 1.6rem;
+}
+.frm_btn{
+    background: #1c8638;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    font-weight: 400;
+    width:100%;
+    border-radius: .5rem;
+}
+.frm_btn:hover{
+    background: #34a853;
+    color: #fff;
+}
+
+.register, .forgetpwd{
+    color: #fff
+}
+.register:hover, .forgetpwd:hover{
+    color: #98ddaa;
+    text-decoration: none;
+}
+.signUser{
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 1);
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: .6rem;
+    border: 0px solid #34a853;
+    position: absolute;
+    top:-40px;
+    left:50%;
+    margin-left: -4rem;
+}
+.signUser_icon{
+    color:#34a853;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* -------------------------------------------------- */
+/* Select Template */ 
+/* -------------------------------------------------- */
+.select__template{
+    /*background-color: #d8d9d9;*/
+    padding: 8rem 0;
+/*background: #4DA0B0;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.select__template img{
+    width: 250px;
+    height: 100%;
+}
+
+.sliderArrow-prev {
+    left: -12rem;
+}
+.sliderArrow-next {
+    right: -12rem;
+}
+.select__template .card{
+    border:5px solid transparent;
+}
+.select__template .card:hover{
+    border:5px solid #f1ce06;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------- */
+/* TEMPLATE CONTENT CRAFT */ 
+/* -------------------------------------------------- */
+
+.template__content_craft{
+    padding: 2rem 0;
+}
+.template__content_craft i{
+    padding-right: 1.5rem;
+    font-size: 2rem;
+}
+.list-group-item{
+    padding: 1.5rem;
+}
+.list-group-item.active{
+    background: #e8eae9;
+    color: #333;
+    border:none;
+}
+
+.template__content_craft-form{
+    background: #f8f8f8;
+    border: 1px solid #dbdbdb;
+    min-height: 480px
+}
+.template__content_craft-form h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    background: #e8eae9;
+    padding: 1rem 1.5rem;
+}
+
+.template__content_craft-form form{
+    padding: 2rem;
+    color:#333
+}
+.template__content_craft-form form .form-group label{
+    color:#333;
+    font-size: 1.6rem;
+}
+.form-btn{
+    font-size: 1.8rem;
+    padding: .5rem 2rem;
+    background: #b8b8b8;
+    color: #333;
+    border:none;
+}
+.form-btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.profile__img{
+    background: #fff;
+    width: 130px;
+    height: 130px;
+    margin-top: 2rem;
+    border:2px dashed #ccc;
+}
+.profile__img i{
+    font-size: 8rem;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem 0 0 2.7rem;
+}
+.form-btn-prev{
+    margin-right: 2rem;
+}
+.profile__preview{
+    text-align: center;
+    padding: 4rem;
+}
+.form_repeat_block h4{
+ font-size: 2rem;
+ margin-bottom: 1rem;
+}
+.add_form{
+    text-decoration: none;
+    color: #cccccc;
+    font-size:1.8rem; 
+}
+.add_form:hover{
+    text-decoration: none;
+    color: #333;
+}
+.add_form i{
+    font-size: 2.5rem;
+}
+.add_form span{
+    display: block;
+    margin-top: .4rem;
+}
+.form_select{
+    height: 4.5rem;
+}
+.list-group-item span{
+    display: inline-block;
+}
+/* -------------------------------------------------- */
+/* MEDIA QUERY */ 
+/* -------------------------------------------------- */
+
+@media (max-width: 575.98px) { 
+    .btn-signup{
+        position: relative;
+        top:0;
+        left: 0;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    .section__hero-block-left-bottom--standoutResume {
+        font-size: 2.6rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        line-height: 135%;
+    }
+    .signup__form {
+        border: 1px solid #ccc;
+        padding: 6rem 2rem;
+     }
+     
+     .list-group-item{
+        text-align: center;
+    }
+     .list-group-item span{
+        display: none;
+    }
+    .template__content_craft i {
+        padding-right:0;
+    }
+    .form-btn {
+        padding: .5rem;
+        font-size: 1.8rem;
+    }
+    .add_form{
+        justify-content: center !important;
+        margin-bottom: 1.5rem;
+    }
+    .add_form i {
+        font-size: 2rem;
+    }
+    .add_form span {
+        margin-top: .1rem;
+    }
+    .profile__preview img{
+        width: 100%;
+    }
+}
