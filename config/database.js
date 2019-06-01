@@ -12,7 +12,7 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 // Establish a database connection
-mongoose.connect('mongodb://localhost:27017/profile-craft', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/profile-craft', { useNewUrlParser: true, useCreateIndex: true })
     .then(function(){
         console.log('connected to db')
     })
